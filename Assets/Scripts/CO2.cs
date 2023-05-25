@@ -18,6 +18,10 @@ public class CO2 : MonoBehaviour
     void Update()
     {
 
+        uint take = CO2Intake / 100000000;
+        take = (uint) Mathf.Round(take);
+        Temperature.instance.outPerYear = take * 0.01f;
+
         text.text = "Carbon Sequestered:\n" + CO2Intake.ToString();
         Money.instance.CO2Intake = CO2Intake;
 
