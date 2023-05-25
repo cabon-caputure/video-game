@@ -11,6 +11,7 @@ public class AddUI : MonoBehaviour
     {
 
         element = UISwapper.instance.AddUI(gameObject);
+        Debug.Log(element);
         
     }
 

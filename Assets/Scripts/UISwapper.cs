@@ -7,6 +7,8 @@ public class UISwapper : MonoBehaviour
     public static UISwapper instance;
     public List<GameObject> uis = new List<GameObject>();
     public int index = 0;
+    public GameObject ac;
+    public GameObject home;
 
     void Awake()
     {
@@ -21,9 +23,25 @@ public class UISwapper : MonoBehaviour
         uis.Add(ui);
         index++;
 
-        Debug.Log("Added Gameobject");
+        Debug.Log("Added Gameobject" + index);
 
         return index;
+
+    }
+
+    public void OnAC()
+    {
+
+        home.SetActive(false);
+        ac.SetActive(true);
+
+    }
+
+    public void ONHOMe()
+    {
+
+        home.SetActive(true);
+        ac.SetActive(false);
 
     }
 
@@ -34,6 +52,7 @@ public class UISwapper : MonoBehaviour
         {
 
             ui.SetActive(false);
+            Debug.Log(ui);
 
         }
 
