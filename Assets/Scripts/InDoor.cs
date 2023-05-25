@@ -1,24 +1,19 @@
 using UnityEngine;
 
-public class OutDoor : MonoBehaviour
+public class InDoor : MonoBehaviour
 {
 
     void Start()
     {
 
         AddCO2();
-        
+
     }
 
     void Update()
     {
 
-        if (!Temperature.instance.canGrowOutside)
-        {
-
-            CO2.instance.SubCO2(107);
-
-        }
+        Year.instance.onYearChange += AddCO2;
 
     }
 

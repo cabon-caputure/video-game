@@ -6,7 +6,7 @@ public class CO2 : MonoBehaviour
 
     public static CO2 instance;
     public TMP_Text text;
-    uint CO2Intake;
+    public uint CO2Intake;
 
     void Awake()
     {
@@ -31,6 +31,13 @@ public class CO2 : MonoBehaviour
     {
 
         CO2Intake += CO2;
+
+    }
+
+    public void SubCO2(uint CO2)
+    {
+
+        CO2Intake -= CO2;
 
     }
 
