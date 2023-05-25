@@ -35,8 +35,16 @@ public class Purchase : MonoBehaviour
     public void PurchaseIndoor()
     {
 
+        if (Money.instance.money < 502250)
+        {
+
+            return;
+
+        }
+
         GameObject purchase;
         purchase = Instantiate(indoorNew, indoor);
+        Money.instance.money -= 502250;
 
     }
 
