@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 50158139}
   - component: {fileID: 50158141}
   - component: {fileID: 50158140}
+  - component: {fileID: 50158142}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -258,6 +259,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50158138}
   m_CullTransparentMesh: 1
+--- !u!114 &50158142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50158138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8d0dd33aec29b44b88fc9434446eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyText: {fileID: 50158140}
+  money: 10000
+  time: 60
+  CO2Intake: 10
 --- !u!1 &302110868
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +737,7 @@ GameObject:
   - component: {fileID: 1816286902}
   - component: {fileID: 1816286904}
   - component: {fileID: 1816286903}
+  - component: {fileID: 1816286905}
   m_Layer: 5
   m_Name: CO2
   m_TagString: Untagged
@@ -844,6 +862,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816286901}
   m_CullTransparentMesh: 1
+--- !u!114 &1816286905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816286901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46152c47d64ca8f468799c6a16374cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
 --- !u!1 &1889265361
 GameObject:
   m_ObjectHideFlags: 0
